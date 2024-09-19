@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jose Arizandieta</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals for BYU assignment">
+    <meta name="author" content="Jose Arizandieta">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
 </head>
-<h1>Hello!</h1>
 <body>
+    <header>
+        <div class="header-content">
+            <img src="images/self_image.JPG" alt="Photo of Jose Arizandieta" class="profile-photo">
+            <h1>Jose Arizandieta</h1>
+        </div>
+        <!-- Si quieres mantener el siguiente h1, elimínalo si no es necesario -->
+        <!-- <h1>WDD 131 - Dynamic Web Fundamentals - Jose Arizandieta</h1> -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/pablo-arizandieta-114398261/" target="_blank">LinkedIn</a>
+        </nav>        
+    </header>
+    <main>
+
+        <section class="card">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        
+        <section class="card">
+            <h2>Toloria, Madagascar</h2>
+            <div class="content">
+                <img src="images/guatemala_temple.webp" alt="guatemala_temple">
+                <small>Guatemala City Temple</small>
+            </div>
+        </section>
     
+        <section class="card full-width-card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="course-grid">
+                <div class="course-item cse">CSE 110</div>
+                <div class="course-item wdd">WDD 130</div>
+                <div class="course-item cse">CSE 111</div>
+                <div class="course-item cse">CSE 210</div>
+                <div class="course-item wdd">WDD 131</div>
+                <div class="course-item wdd">WDD 231</div>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <p>©<span id="currentyear"></span> Jose Arizandieta, Guatemala, Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>    
 </body>
 </html>

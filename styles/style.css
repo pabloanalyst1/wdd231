@@ -1,0 +1,141 @@
+/* Estilo base (aplicable a todas las pantallas) */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 48%; /* Cards en paralelo en pantallas grandes */
+}
+
+.full-width-card {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+    gap: 10px;
+}
+
+.course-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+/* Estilo del header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Media Queries para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Las cards ocupan todo el ancho */
+        margin: 10px 0;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+
+    .header-content {
+        flex-direction: column; /* Imagen y título apilados */
+        text-align: center;
+    }
+
+    nav a {
+        display: block; /* Menú de navegación vertical */
+        margin: 10px 0;
+    }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .course-grid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}
