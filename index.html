@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Jose Arizandieta</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals for BYU assignment">
+    <title>WDD 231 - Web Frontend Development 1 - Jose Arizandieta</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development for BYU assignment">
     <meta name="author" content="Jose Arizandieta">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +14,27 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="images/self_image.JPG" alt="Photo of Jose Arizandieta" class="profile-photo">
-            <h1>Jose Arizandieta</h1>
+        <div class="header-top">
+            <img src="images/self_image.JPG" alt="Profile photo" class="profile-photo">
+            <h1>Jose P. Arizandieta</h1>
         </div>
-        <!-- Si quieres mantener el siguiente h1, elimínalo si no es necesario -->
-        <!-- <h1>WDD 131 - Dynamic Web Fundamentals - Jose Arizandieta</h1> -->
-        <nav>
+        
+        <nav class="header-nav">
             <a href="#">Home</a>
             <a href="#">Chamber</a>
             <a href="#">GitHub Profile</a>
             <a href="https://www.linkedin.com/in/pablo-arizandieta-114398261/" target="_blank">LinkedIn</a>
-        </nav>        
+        </nav>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
     </header>
+    
     <main>
-
-        <section class="card">
+        <section id="course-work" class="card">
             <h2>Course Work</h2>
             <ul>
                 <li></li>
@@ -38,15 +43,15 @@
             </ul>
         </section>
         
-        <section class="card">
+        <section id="country-info" class="card">
             <h2>Toloria, Madagascar</h2>
             <div class="content">
-                <img src="images/guatemala_temple.webp" alt="guatemala_temple">
-                <small>Guatemala City Temple</small>
+                <img src="images/guatemala_temple.webp" alt="Baobab Trees in Toloria, Madagascar">
+                <small>Baobab Trees in Toloria</small>
             </div>
         </section>
     
-        <section class="card full-width-card">
+        <section id="programming-cert" class="card full-width-card">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="filter-buttons">
                 <button id="all">All</button>
@@ -62,8 +67,8 @@
                 <div class="course-item wdd">WDD 231</div>
             </div>
         </section>
-    </main>    
-
+    </main>
+    
     <footer>
         <p>©<span id="currentyear"></span> Jose Arizandieta, Guatemala, Guatemala</p>
         <p id="lastModified"></p>
