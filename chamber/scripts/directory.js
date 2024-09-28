@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     async function loadMembers() {
         try {
-            const response = await fetch('data/members.json'); // Load Json
+            const response = await fetch('data/members.json'); // Load Jason
             const members = await response.json(); // Convert to an object array
 
             displayMembers(members);
