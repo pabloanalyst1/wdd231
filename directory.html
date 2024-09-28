@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory - Guatemala Chamber of Commerce</title>
+    <meta name="description" content="List of businesses in the Guatemala Chamber of Commerce directory">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Guatemala Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber_logo.png">
+    <meta property="og:url" content="https://yourchamberwebsite.com">
+</head>
+<body>
+    <header>
+        <h1>Guatemala Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Business Directory</h2>
+
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+
+            <div id="directory" class="grid-view">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Guatemala Chamber of Commerce. All rights reserved.</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p>Contact: info@guatemalachamber.com | Phone: +502-1234-5678</p>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+</body>
+</html>
