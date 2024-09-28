@@ -5,7 +5,7 @@
       "phone": "502-1234-5678",
       "website": "http://elbuenprecio.com",
       "membershipLevel": 1,
-      "image": "elbuenprecio.jpg"
+      "image": "el_buen_precio.webp"
     },
     {
       "name": "Restaurante Los Sabores",
@@ -13,7 +13,7 @@
       "phone": "502-2345-6789",
       "website": "http://restlosabores.com",
       "membershipLevel": 2,
-      "image": "lossabores.jpg"
+      "image": "los_sabores.webp"
     },
     {
       "name": "Café Chapín",
@@ -21,7 +21,7 @@
       "phone": "502-3456-7890",
       "website": "http://cafechapin.com",
       "membershipLevel": 3,
-      "image": "cafechapin.jpg"
+      "image": "cafe_chapin.webp"
     },
     {
       "name": "Supermercado La Colonia",
@@ -29,7 +29,7 @@
       "phone": "502-4567-8901",
       "website": "http://lacolonia.com",
       "membershipLevel": 2,
-      "image": "lacolonia.jpg"
+      "image": "la_colonia.webp"
     },
     {
       "name": "Servicios Financieros Global",
@@ -37,7 +37,7 @@
       "phone": "502-5678-9012",
       "website": "http://financierosglobal.com",
       "membershipLevel": 3,
-      "image": "financierosglobal.jpg"
+      "image": "financieros_global.webp"
     },
     {
       "name": "Panadería La Esperanza",
@@ -45,7 +45,7 @@
       "phone": "502-6789-0123",
       "website": "http://panaderialaesperanza.com",
       "membershipLevel": 1,
-      "image": "esperanza.jpg"
+      "image": "la_esperanza.webp"
     },
     {
       "name": "Clínica Médica Los Andes",
@@ -53,7 +53,7 @@
       "phone": "502-7890-1234",
       "website": "http://mediclosandes.com",
       "membershipLevel": 2,
-      "image": "losandes.jpg"
+      "image": "los_andes.webp"
     }
   ]
   
