@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Guatemala Chamber of Commerce. Join us to engage with local businesses and events.">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Guatemala Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/camara_de_comercio.png" alt="Chamber of Commerce Hero Image">
+            <h2>Welcome to the Chamber of Commerce</h2>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h3>Join the Chamber of Commerce</h3>
+            <p>Become a member today and enjoy networking, events, and exclusive resources.</p>
+            <a href="join.html" class="button">Join Now</a> <!--Botón-->
+        </section>
+
+        <section class="index-card-section">
+            <div class="event_weather">
+                <h3>Current Events</h3>
+                <p>Information about local events will go here...</p>
+            </div>
+    
+            <div class="event_weather">
+                <h3>Weather Forecast</h3>
+                <p>Current temperature: <span id="currentTemp"></span>°C</p>
+                <p>Weather description: <span id="weatherDescription"></span></p>
+                <ul id="forecast">
+                    <!-- Forecast here -->
+                </ul>
+            </div>
+    
+            <div class="fbusiness">
+                <h3>Featured Businesses</h3>
+                <div id="spotlight-container">
+                    <!-- Businesses here -->
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Guatemala Chamber of Commerce. All rights reserved.</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p>Contact: info@guatemalachamber.com | Phone: +502-1234-5678</p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

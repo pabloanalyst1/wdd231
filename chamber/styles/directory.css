@@ -1,3 +1,4 @@
+/* --------- General Styles --------- */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    margin: 0;
 }
 
 header {
@@ -33,6 +33,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* --------- Directory Page Styles --------- */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -109,12 +118,107 @@ button:hover {
     margin-right: 20px;
 }
 
-footer {
+/* --------- Index Page Styles --------- */
+.hero {
+    background-image: url('../images/hero.webp');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.cta {
+    background-color: #ffcc00;
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
+    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+}
+
+/* Style for cards */
+.index-card-section {
+    display: flex;
+    flex-wrap: wrap; /* This moves cards if needed */
+    gap: 20px;
+}
+
+.event_weather {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(50% - 20px); /* Space and gap */
+}
+
+.fbusiness {
+    flex: 1 1 100%; /* This makes the Featured Businesses card to use the 100% width */
+    background-color: #f2f2f2;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.event_weather:hover, .fbusiness:hover {
+    transform: translateY(-10px);
+}
+
+.event_weather h3, .fbusiness h3 {
+    margin-bottom: 12px;
+    text-align: center;
+    color: #555;
+}
+
+.event_weather p, .event_weather ul, .fbusiness p {
+    margin-bottom: 15px;
+    color: #666;;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Specific styles */
+#spotlight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.spotlight {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.spotlight:hover {
+    transform: scale(1.05);
+}
+
+.spotlight img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.spotlight h3 {
+    margin-bottom: 5px;
+}
+
+.spotlight p {
+    margin-bottom: 5px;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .event_weather, .fbusiness {
+        flex: 1 1 100%; /* Whole width in small screens*/
+    }
 }
 
 /* Responsive Design */
@@ -126,10 +230,18 @@ footer {
     .list-view .card {
         display: block;
     }
+
+    .spotlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
     .card {
         width: 100%;
+    }
+
+    .spotlights {
+        grid-template-columns: 1fr;
     }
 }
