@@ -105,5 +105,12 @@ function displaySpotlights(members) {
     });
 }
 
+const yearSpan = document.getElementById("currentyear");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
+
+const lastModifiedSpan = document.getElementById("lastModified");
+lastModifiedSpan.textContent = `Last updated: ${document.lastModified}`;
+
 // load spotlights
 loadSpotlights();
