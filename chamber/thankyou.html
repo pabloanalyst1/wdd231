@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Guatemala Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+<body>
+    <header>
+        <h1>Guatemala Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank you for joining the Chamber!</h2>
+        <p>Here is the information you submitted:</p>
+        <ul>
+            <li>First Name: <span id="first-name"></span></li>
+            <li>Last Name: <span id="last-name"></span></li>
+            <li>Email: <span id="email"></span></li>
+            <li>Mobile Phone: <span id="phone"></span></li>
+            <li>Business Name: <span id="organization"></span></li>
+            <li>Submission Time: <span id="timestamp"></span></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Guatemala Chamber of Commerce. All rights reserved.</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <p>Contact: info@guatemalachamber.com | Phone: +502-1234-5678</p>
+    </footer>
+
+    <script>
+        // This gets the parameters
+        function getURLParameter(name) {
+            return new URLSearchParams(window.location.search).get(name);
+        }
+    
+        // use the fields values from the website
+        document.getElementById('first-name').textContent = getURLParameter('first-name');
+        document.getElementById('last-name').textContent = getURLParameter('last-name');
+        document.getElementById('email').textContent = getURLParameter('email');
+        document.getElementById('phone').textContent = getURLParameter('phone');
+        document.getElementById('organization').textContent = getURLParameter('organization');
+        document.getElementById('timestamp').textContent = new Date().toLocaleString(); // Current date and time
+    </script>
+    
+    <script src="scripts/join.js"></script>
+</body>
+</html>
