@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
+</head>
+<body>
+    <header>
+        <h1>Guatemala Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <h2>Demographics & Stats</h2>
+            <p id="visit-message"></p>
+            <!-- Side bar ex -->
+            <ul>
+                <li>Population: 1.2M</li>
+                <li>Major Industries: Tourism, Agriculture</li>
+                <li>Average Temperature: 25°C</li>
+            </ul>
+        </section>
+
+        <section class="main-content">
+            <h2>Explore the Area</h2>
+            <div class="gallery">
+                <!-- lazy loading -->
+                <figure>
+                    <img src="images/image1.jpg" alt="Local attraction 1" loading="lazy">
+                    <figcaption>Local attraction 1</figcaption>
+                </figure>
+                <!-- MORE IMAGES -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Guatemala Chamber of Commerce. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/discover.js"></script>
+</body>
+</html>
