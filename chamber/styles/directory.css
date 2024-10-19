@@ -216,14 +216,12 @@ button:hover {
 
 /* --------- Discover Page Styles --------- */
 
-/* Sidebar and main content grid layout */
 main {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Sidebar and main content */
     gap: 20px;
 }
 
-/* Sidebar styling */
 .sidebar {
     background-color: #f4f4f4;
     padding: 20px;
@@ -276,7 +274,6 @@ main {
     transform: scale(1.05);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr; /* Single column layout for mobile */
@@ -294,7 +291,6 @@ main {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .card {
         width: 48%;
