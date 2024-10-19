@@ -214,10 +214,83 @@ button:hover {
     margin-bottom: 5px;
 }
 
+/* --------- Discover Page Styles --------- */
+
+/* Sidebar and main content grid layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar and main content */
+    gap: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Gallery styling */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery figure {
+    flex: 1 1 30%;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+
+    .gallery figure {
+        flex: 1 1 100%; /* Full width images in mobile */
+    }
+}
+
 /* Small screens */
 @media (max-width: 768px) {
     .event_weather, .fbusiness {
-        flex: 1 1 100%; /* Whole width in small screens*/
+        flex: 1 1 100%; /* Whole width in small screens */
     }
 }
 
