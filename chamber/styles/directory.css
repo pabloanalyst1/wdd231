@@ -246,13 +246,13 @@ button:hover {
 }
 
 /* Image Gallery (Lazy-loaded images) */
-.image-gallery {
+.discover-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
     gap: 20px;
 }
 
-.image-gallery img {
+.discover-gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -260,11 +260,11 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
-.image-gallery img:hover {
+.discover-gallery img:hover {
     transform: scale(1.05);
 }
 
-.image-gallery figcaption {
+.discover-gallery figcaption {
     text-align: center;
     margin-top: 10px;
     font-size: 0.9rem;
@@ -281,8 +281,6 @@ button:hover {
         grid-template-columns: 1fr; /* Full-width images in mobile */
     }
 }
-
-
 
 /* Small screens */
 @media (max-width: 768px) {
