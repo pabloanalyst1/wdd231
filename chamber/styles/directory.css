@@ -214,6 +214,49 @@ button:hover {
     margin-bottom: 5px;
 }
 
+/* --------- General Styles --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
 /* --------- Discover Page Styles --------- */
 
 .discover-container {
@@ -222,6 +265,19 @@ button:hover {
     gap: 20px;
     max-width: 1200px;
     margin: auto;
+}
+
+.discover-title {
+    grid-column: 1 / -1; /* Title spans across both columns */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
 }
 
 .sidebar {
@@ -246,14 +302,12 @@ button:hover {
 /* Image Gallery (Lazy-loaded images) */
 .discover-gallery {
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
     gap: 20px;
 }
 
 .discover-gallery img {
     width: 100%;
-    max-width: 200px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -271,14 +325,24 @@ button:hover {
     color: #555;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .discover-container {
         grid-template-columns: 1fr; /* Single column layout for mobile */
     }
 
-    .image-gallery {
+    .discover-gallery {
         grid-template-columns: 1fr; /* Full-width images in mobile */
+    }
+
+    .discover-title, .gallery-title {
+        text-align: left; /* Centered titles might not look good in small screens */
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .sidebar .box {
+        font-size: 0.9rem; /* Smaller font for mobile */
     }
 }
 
