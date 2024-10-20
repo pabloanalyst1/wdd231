@@ -259,25 +259,13 @@ footer {
 
 /* --------- Discover Page Styles --------- */
 
+/* Container for sidebar and gallery */
 .discover-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Sidebar takes 1 part, main content 2 parts */
+    grid-template-columns: 1fr 3fr; /* Sidebar takes 1 part, gallery 3 parts */
     gap: 20px;
     max-width: 1200px;
     margin: auto;
-}
-
-.discover-title {
-    grid-column: 1 / -1; /* Title spans across both columns */
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.gallery-title {
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 20px 0;
 }
 
 .sidebar {
@@ -300,6 +288,18 @@ footer {
 }
 
 /* Image Gallery (Lazy-loaded images) */
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
 .discover-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
@@ -308,7 +308,8 @@ footer {
 
 .discover-gallery img {
     width: 100%;
-    height: auto;
+    height: 200px; /*uniform height */
+    object-fit: cover; /* the images are cropped properly to fit the box */
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -325,6 +326,7 @@ footer {
     color: #555;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .discover-container {
         grid-template-columns: 1fr; /* Single column layout for mobile */
@@ -332,17 +334,6 @@ footer {
 
     .discover-gallery {
         grid-template-columns: 1fr; /* Full-width images in mobile */
-    }
-
-    .discover-title, .gallery-title {
-        text-align: left; /* Centered titles might not look good in small screens */
-    }
-}
-
-/* Small screens */
-@media (max-width: 768px) {
-    .sidebar .box {
-        font-size: 0.9rem; /* Smaller font for mobile */
     }
 }
 
