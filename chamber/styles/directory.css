@@ -216,7 +216,6 @@ button:hover {
 
 /* --------- Discover Page Styles --------- */
 
-/* Container for sidebar and main content */
 .discover-container {
     display: grid;
     grid-template-columns: 1fr 2fr; /* Sidebar takes 1 part, main content 2 parts */
@@ -225,7 +224,6 @@ button:hover {
     margin: auto;
 }
 
-/* Sidebar style */
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -248,12 +246,14 @@ button:hover {
 /* Image Gallery (Lazy-loaded images) */
 .discover-gallery {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
     gap: 20px;
 }
 
 .discover-gallery img {
     width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
