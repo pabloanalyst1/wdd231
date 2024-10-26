@@ -1,0 +1,455 @@
+/* -------------------------------- GENERAL Styles --------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.content div {
+    flex: 1 1 30%;
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content > div,.tips-section, .motivation {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.content > div:hover,.tips-section:hover, .motivation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+.tips-section, .motivation {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section ul {
+    list-style-type: none;
+}
+
+.tips-section li {
+    margin-bottom: 10px; 
+    padding: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.tips-section li:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* -------------------------------- WORKOUTT Page Styles --------------------------------- */
+.workout-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.workout-card {
+    flex: 1 1 30%;
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+.workout-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* -------------------------------- NUTRITIONNNN Page Styles --------------------------------- */
+.intro, .nutrition-tips, .resources{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.nutrition-tips h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.nutrition-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition-tips li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+.nutrition-tips li:last-child {
+    border-bottom: none;
+}
+
+.meal-examples {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.meal-examples h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.meal-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.meal-card-container .meal-card:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.meal-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+.meal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.meal-card:hover img {
+    transform: scale(1.05);
+}
+
+.meal-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* -------------------------------- SUMPLEMENTSSS Page Styles --------------------------------- */
+.supplement-examples{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.supplement-examples h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.supplement-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.supplement-card-container .supplement-card:nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.supplement-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.supplement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+.supplement-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.supplement-card:hover img {
+    transform: scale(1.05);
+}
+
+.supplement-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    text-decoration: none; 
+    color: #007bff;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------------- Contact Page Styles --------------------------------- */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-form {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* -------------------------------- MEDIAAAAAAAAAAAA --------------------------------- */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    nav a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .menu-toggle.active + nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
