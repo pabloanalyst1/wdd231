@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 // last visit and localStorage
 document.addEventListener("DOMContentLoaded", () => {
     const lastVisitDisplay = document.getElementById("last-visit");
