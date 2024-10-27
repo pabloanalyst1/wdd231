@@ -8,21 +8,27 @@ function toggleMenu() {
 
 // Motivational 
 document.addEventListener("DOMContentLoaded", () => {
-    const quoteButton = document.getElementById("quote-button");
-    const quoteDisplay = document.getElementById("quote");
+    const weatherButton = document.getElementById("weather-button");
+    const weatherDisplay = document.getElementById("weather");
 
-    quoteButton.addEventListener("click", async () => {
+    weatherButton.addEventListener("click", async () => {
+        const apiKey = "28b1504f28b3f24ee9dac78d9d5f063c";
+        const city = "London";
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
         try {
-            const response = await fetch("https://zenquotes.io/api/random");
-            if (!response.ok) throw new Error("Failed to fetch quote");
+            const response = await fetch(url);
+            if (!response.ok) throw new Error("Failed to fetch weather data");
             const data = await response.json();
-            quoteDisplay.textContent = `"${data[0].q}" - ${data[0].a}`;
+            console.log(data);
+            weatherDisplay.textContent = `The weather in ${city} is ${data.weather[0].description} with a temperature of ${data.main.temp}°C. It's time to exercise!`;
         } catch (error) {
-            quoteDisplay.textContent = "Could not fetch quote. Please try again later.";
+            weatherDisplay.textContent = "Could not fetch weather data. Please try again later.";
             console.error(error);
         }
     });
 });
+
 
 // last visit and localStorage
 document.addEventListener("DOMContentLoaded", () => {

@@ -81,20 +81,20 @@ nav a:hover {
     text-align: center;
 }
 
-.content > div,.tips-section, .motivation, .visit-info {
+.content > div,.tips-section, .weather-section, .visit-info {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 8px;
 }
 
-.content > div:hover,.tips-section:hover, .motivation:hover, .visit-info:hover {
+.content > div:hover,.tips-section:hover, .weather-section:hover, .visit-info:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: #f8f8f8;
 }
 
-.tips-section, .motivation{
+.tips-section, .weather-section{
     padding: 20px;
     text-align: center;
     background-color: #fff;
